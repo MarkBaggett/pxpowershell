@@ -123,7 +123,7 @@ def main():
     parser.add_argument("destination", help="The destination ISO file to create (including path).")
     parser.add_argument("title",help="The title of the ISO.")
     args = parser.parse_args()
-    print(dir2iso(args.source, args.destination, args.title))
+    print(dir2iso(args.source, args.destination, args.title).decode())
 
 
 if __name__ == "__main__":
